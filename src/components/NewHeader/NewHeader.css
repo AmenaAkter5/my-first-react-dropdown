@@ -1,0 +1,7 @@
+.arrow-icon {
+  transition: transform 0.3s ease; /* Define transition for smooth animation */
+}
+
+.open {
+  transform: rotate(180deg); /* Rotate the icon when dropdown is open */
+}

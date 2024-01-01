@@ -1,0 +1,49 @@
+.dropdown {
+  transition-duration: 0.3s;
+}
+
+.dropdown-closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.dropdown-open {
+  max-height: 500px; /* Set your desired max height */
+  opacity: 1;
+  overflow: hidden;
+  pointer-events: auto;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.slide-down {
+  animation: slideDownAnimation 0.3s ease forwards;
+}
+
+.slide-up {
+  animation: slideUpAnimation 0.3s ease forwards;
+}
+
+@keyframes slideDownAnimation {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpAnimation {
+  from {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}

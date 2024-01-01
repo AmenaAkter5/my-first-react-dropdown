@@ -1,0 +1,22 @@
+/* ...other styles */
+
+/* Define initial state and transitions for open/close */
+.open-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible; /* Ensure the element is visible */
+}
+
+.close-dropdown {
+  opacity: 0;
+  transform: translateY(-25px);
+  visibility: hidden; /* Hide the element, but keep its space */
+  pointer-events: none; /* Disable pointer events on hidden element */
+}
+
+/* Adjust opacity and visibility for smoother transitions */
+ul {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}

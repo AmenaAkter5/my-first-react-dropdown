@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* YourComponent.css */
+
+/* YourComponent.css */
+
+/* Styles for the input field */
+.custom-input {
+  /* Adjust size and appearance */
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none; /* Remove default input outline */
+
+  /* Customize cursor */
+  caret-color: red; /* Change the color of the cursor */
+}
+
+/* Adjust input height */
+.custom-input {
+  height: 40px; /* Adjust the input height */
+}
+
+/* Additional styling for focus state if desired */
+.custom-input:focus {
+  border-color: blue; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Add a box-shadow on focus */
+}
